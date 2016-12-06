@@ -26,7 +26,7 @@ public class RegisterStudent extends HttpServlet {
        
 	//Validation object to validate user input.
 	private FormValidation validator;
-	//ResponseMessages object to get predefined response messages.
+	//ResponseMessages object to get dynamic response messages.
 	private ResponseMessages responseMsg;
 	//Used to write messages on client's end.
 	private PrintWriter msgWriter;
@@ -61,8 +61,8 @@ public class RegisterStudent extends HttpServlet {
     	session.beginTransaction();
     	session.save(student);
     	session.getTransaction().commit();
-    	
-    	return "<html><head><title>Registration Success</title></head><body><h4 style='font-weight:bold; color:green;'>Successfully registerd new Student !</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
+    	//Notify end client that the registration was successful
+    	return responseMsg.getSuccessMsg();
     }
 	/**
 	 * The doGet method is invoked when the client uses the HTTP GET method

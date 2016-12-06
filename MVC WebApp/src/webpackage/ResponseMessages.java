@@ -13,7 +13,7 @@ public class ResponseMessages {
 	private String invalidPasswordMsg;
 	private String successMsg;
 	
-	//Initializes all the fields of the class with messages
+	//Initializes all the fields of the class with dynamic messages
 	public ResponseMessages()
 	{
 		this.incompleteFormMsg = "<html><head><title>Incomplete Form</title></head><body><h4 style='font-weight:bold; color:red;'>Incoplete Form. One or several fields are empty</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
@@ -25,6 +25,7 @@ public class ResponseMessages {
 		this.invalidPhoneMsg = "<html><head><title>Validation Error</title></head><body><h4 style='font-weight:bold; color:red;'>Invalid Phone number</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
 		this.invalidEmailMsg = "<html><head><title>Validation Error</title></head><body><h4 style='font-weight:bold; color:red;'>Invalid Email Address</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
 		this.invalidPasswordMsg = "<html><head><title>Validation Error</title></head><body><h4 style='font-weight:bold; color:red;'>Invalid User Password</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
+		this.successMsg = "<html><head><title>Registration Success</title></head><body><h4 style='font-weight:bold; color:green;'>Successfully registerd new Student !</h4><br><a href='index.jsp'>Go Back to Registration</a></body></html>";
 	}
 	//GETTER METHODS.
 	//ALL THE FIELD VALUES ARE SET IN THE CONSTRUCTOR
