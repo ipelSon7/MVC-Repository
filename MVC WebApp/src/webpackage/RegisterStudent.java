@@ -77,8 +77,11 @@ public class RegisterStudent extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		service(request,response);
 	}
-	
+	/**Define a general service method that gets invoked when the 
+	 * client issues a GET or POST request
+	 */
 	public void service(HttpServletRequest request, HttpServletResponse response)throws IOException{
+		
 		//Create a FormValidation object to validate user data
 		validator = new FormValidation();
 		//Holds server messages

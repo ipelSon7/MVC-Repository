@@ -11,7 +11,11 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
-
+/**
+ * The FormValidationTest class conducts several JUnit test cases
+ * to verify whether each validation method meets the
+ * application requirements (business rules).
+ */
 @RunWith(Parameterized.class)
 public class FormValidationTest {
 

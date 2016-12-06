@@ -1,7 +1,14 @@
 package webpackage;
 
+/**
+ * The ResponseMessages class holds server messages
+ * that are dynamically generated upon processing of
+ * client request.
+ *
+ */
 public class ResponseMessages {
 
+	//Declare all the fields of a ResponseMessages object
 	private String incompleteFormMsg;
 	private String invalidUserIDMsg;
 	private String invalidFirstNameMsg;
